@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Kak 🎉</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.container{
+    z-index:2;
+    animation:fade 2s ease;
+    padding:20px;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:10px;
+    text-shadow:0 0 15px rgba(255,255,255,0.8);
+}
+
+p{
+    font-size:20px;
+    max-width:700px;
+    line-height:1.7;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4f81;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.ballon{
+    position:absolute;
+    bottom:-150px;
+    width:60px;
+    height:80px;
+    border-radius:50%;
+    animation:float 10s infinite;
+    opacity:0.8;
+}
+
+.ballon::before{
+    content:'';
+    position:absolute;
+    width:2px;
+    height:80px;
+    background:white;
+    left:50%;
+    top:80px;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+audio{
+    display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎂 Happy Birthday Kak 🎂 Dari Adek Mu Nih Adin</h1>
+    
+    <p>
+        Selamat ulang tahun ya kak 🎉  
+        Semoga panjang umur, sehat selalu, dimudahkan semua urusannya,
+        dan makin bahagia setiap hari 🤍  
+        Semoga semua harapan dan cita-citanya tercapai👑 Pinjam dulu 100😋 ✨
+    </p>
+
+    <button class="btn" onclick="alert('Happy Birthday Kak 🥳 by Adin/Dilxz👑')">
+        Klik Ucapan 🎁
+    </button>
+</div>
+
+<!-- Balon -->
+<div class="ballon" style="left:5%; background:#ff4f81; animation-duration:9s;"></div>
+<div class="ballon" style="left:20%; background:#ffd166; animation-duration:12s;"></div>
+<div class="ballon" style="left:40%; background:#06d6a0; animation-duration:10s;"></div>
+<div class="ballon" style="left:60%; background:#118ab2; animation-duration:11s;"></div>
+<div class="ballon" style="left:80%; background:#ef476f; animation-duration:8s;"></div>
+
+<!-- Musik -->
+<audio autoplay loop>
+    <source src="https://files.catbox.moe/7w1x9x.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
